@@ -10,6 +10,7 @@ export default class Shipyard {
     } else {
       this.el = el
     }
+    this.shipyard = this
     return this
   }
 

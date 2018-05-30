@@ -7,8 +7,8 @@ export default class Scroll extends Shipyard {
   }
 
   scroll () {
-    shipyard.toggleClass('scrolling', window.pageYOffset > 0)
-    shipyard.toggleClass('scroll-top', window.pageYOffset <= 0)
-    shipyard.toggleClass('scroll-bottom', window.pageYOffset + window.innerHeight >= document.body.scrollHeight)
+    this.shipyard.toggleClass('scrolling', window.pageYOffset > 0)
+    this.shipyard.toggleClass('scroll-top', window.pageYOffset <= 0)
+    this.shipyard.toggleClass('scroll-bottom', window.pageYOffset + window.innerHeight >= document.body.scrollHeight)
   }
 }

@@ -8,6 +8,6 @@ export default class Hamburger extends Shipyard {
 
   toggle (e) {
     e.preventDefault()
-    shipyard.toggleClass('hamburger-button-clicked')
+    this.shipyard.toggleClass('hamburger-button-clicked')
   }
 }

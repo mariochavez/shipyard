@@ -9,11 +9,11 @@ export default class Modal extends Shipyard {
 
   open () {
     this.removeClass('hidden')
-    shipyard.addClass('modal-open')
+    this.shipyard.addClass('modal-open')
   }
 
   close () {
     this.addClass('hidden')
-    shipyard.removeClass('modal-open')
+    this.shipyard.removeClass('modal-open')
   }
 }
