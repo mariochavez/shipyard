@@ -1,4 +1,6 @@
-class Scroll extends Shipyard {
+import Shipyard from './core'
+
+export default class Scroll extends Shipyard {
   constructor (el) {
     super(el)
     this.on('scroll resize', this.scroll).trigger('scroll')

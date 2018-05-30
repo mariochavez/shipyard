@@ -1,4 +1,6 @@
-class Modal extends Shipyard {
+import Shipyard from './core'
+
+export default class Modal extends Shipyard {
   constructor (el) {
     super(el)
     this.on('open', () => { this.open() })

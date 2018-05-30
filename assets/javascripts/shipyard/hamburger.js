@@ -1,4 +1,6 @@
-class Hamburger extends Shipyard {
+import Shipyard from './core'
+
+export default class Hamburger extends Shipyard {
   constructor (el) {
     super(el)
     this.on('click', this.toggle)

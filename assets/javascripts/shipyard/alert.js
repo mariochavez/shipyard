@@ -1,4 +1,6 @@
-class Alert extends Shipyard {
+import Shipyard from './core'
+
+export default class Alert extends Shipyard {
   constructor (el) {
     super(el)
     this.on('show', (e) => { this.show(e) })

@@ -1,4 +1,6 @@
-class AccordionTrigger extends Shipyard {
+import Shipyard from './core'
+
+export default class AccordionTrigger extends Shipyard {
   constructor (el) {
     super(el)
     this.accordion = new Accordion(this.attr('accordion'))

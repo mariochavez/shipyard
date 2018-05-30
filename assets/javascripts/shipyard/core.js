@@ -1,4 +1,4 @@
-class Shipyard {
+export default class Shipyard {
   constructor (el, subClass) {
     if (subClass) {
       this.els = []

@@ -1,4 +1,6 @@
-class AlertTimer extends Shipyard {
+import Shipyard from './core'
+
+export default class AlertTimer extends Shipyard {
   constructor (el, alert) {
     super(el)
     this.alert = alert

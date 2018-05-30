@@ -1,4 +1,6 @@
-class Accordion extends Shipyard {
+import Shipyard from './core'
+
+export default class Accordion extends Shipyard {
   constructor (el) {
     super(el)
     this.on('toggle', () => { this.toggle() })
