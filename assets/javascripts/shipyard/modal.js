@@ -1,19 +1,19 @@
 import Shipyard from './core'
 
 export default class Modal extends Shipyard {
-  constructor (el) {
-    super(el)
-    this.on('open', () => { this.open() })
-    this.on('click', '[modal-close]', () => { this.close() })
+  constructor (el, instance) {
+    super(el, instance)
+    this.on('open', () => { this.open().bind(this) })
+    this.on('click', '[modal-close]', () => { this.close().bind(this) })
   }
 
   open () {
-    this.removeClass('hidden')
-    this.shipyard.addClass('modal-open')
+    this.instance.removeClass('hidden')
+    this.instance.addClass('modal-open')
   }
 
   close () {
-    this.addClass('hidden')
-    this.shipyard.removeClass('modal-open')
+    this.instance.addClass('hidden')
+    this.instance.removeClass('modal-open')
   }
 }

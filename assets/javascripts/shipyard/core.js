@@ -1,5 +1,5 @@
 export default class Shipyard {
-  constructor (el, subClass) {
+  constructor (el, instance, subClass) {
     if (subClass) {
       this.els = []
       document.querySelectorAll(el).forEach((el) => {
@@ -10,7 +10,7 @@ export default class Shipyard {
     } else {
       this.el = el
     }
-    this.shipyard = this
+    this.instance = instance || self
     return this
   }
 
